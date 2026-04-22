@@ -5,20 +5,20 @@
 class Pupdate < Formula
   desc "Auto-update project dependencies on directory entry"
   homepage "https://github.com/aaronflorey/pupdate"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aaronflorey/pupdate/releases/download/v0.4.0/pupdate_Darwin_x86_64.tar.gz"
-      sha256 "404b1d7e6b989369c0700c0a572cb7cd99d39d0dd7425561d239752791ca737c"
+      url "https://github.com/aaronflorey/pupdate/releases/download/v0.5.0/pupdate_Darwin_x86_64.tar.gz"
+      sha256 "2c00ec91d1cf36052a9a9ae98e017da4ce3fa31d23ea247f0e05dab0a818f591"
 
       define_method(:install) do
         bin.install "pupdate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aaronflorey/pupdate/releases/download/v0.4.0/pupdate_Darwin_arm64.tar.gz"
-      sha256 "9efca36b67509edf31607f4bb36f87a79d01fe589cf424155793d5b933f974b0"
+      url "https://github.com/aaronflorey/pupdate/releases/download/v0.5.0/pupdate_Darwin_arm64.tar.gz"
+      sha256 "77ae96eb2d9e23cba47e01ba1a8583339026fe5632f59340f803da4f6edc0b73"
 
       define_method(:install) do
         bin.install "pupdate"
@@ -28,15 +28,15 @@ class Pupdate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaronflorey/pupdate/releases/download/v0.4.0/pupdate_Linux_x86_64.tar.gz"
-      sha256 "3633c9f3b534efbdd5edff8bed08684009c1e26a06de57391561fb693ca0be30"
+      url "https://github.com/aaronflorey/pupdate/releases/download/v0.5.0/pupdate_Linux_x86_64.tar.gz"
+      sha256 "80c9bd33f8c1bd20240a1c1b240a5fd4217223f2ae730ccbf2fe51c35a8a4236"
       define_method(:install) do
         bin.install "pupdate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaronflorey/pupdate/releases/download/v0.4.0/pupdate_Linux_arm64.tar.gz"
-      sha256 "47dcc382a4392003da05da70d093d46ef3faaf12ac22af2f55d792ec1d80537e"
+      url "https://github.com/aaronflorey/pupdate/releases/download/v0.5.0/pupdate_Linux_arm64.tar.gz"
+      sha256 "6593c6fee275e097337ae46cb256eeef2af6a5326e9771a37653f8a1ba7ac5d2"
       define_method(:install) do
         bin.install "pupdate"
       end
