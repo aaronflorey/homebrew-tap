@@ -5,21 +5,21 @@
 class Mdc < Formula
   desc "Run docker compose across multiple projects"
   homepage "https://github.com/aaronflorey/mdc"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aaronflorey/mdc/releases/download/v0.3.0/mdc_0.3.0_darwin_amd64.tar.gz"
-      sha256 "ad2f4070f20afec5ed57219daa369dd8306b0a562cdb95ddc4b04d473e84b65a"
+      url "https://github.com/aaronflorey/mdc/releases/download/v0.3.1/mdc_0.3.1_darwin_amd64.tar.gz"
+      sha256 "a800b9015cd90c30d0aff9b5640cb31f99a54f3f37f44e0ed3cbd30e8d3792f2"
 
       define_method(:install) do
         bin.install "mdc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aaronflorey/mdc/releases/download/v0.3.0/mdc_0.3.0_darwin_arm64.tar.gz"
-      sha256 "f5e29837bfbb57f4ae85e0c332c476a5263f9bcbb7ca443cb8fc1507ee26ee0c"
+      url "https://github.com/aaronflorey/mdc/releases/download/v0.3.1/mdc_0.3.1_darwin_arm64.tar.gz"
+      sha256 "b6ba0f990d5eec8d62d9c568f7c191d433b77b6ea45e3781032ca6b1190e3371"
 
       define_method(:install) do
         bin.install "mdc"
@@ -29,15 +29,15 @@ class Mdc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaronflorey/mdc/releases/download/v0.3.0/mdc_0.3.0_linux_amd64.tar.gz"
-      sha256 "162788deede0ab3e495f22ea45ddbc7b448d9e51ef8c52db72e7274c003535a8"
+      url "https://github.com/aaronflorey/mdc/releases/download/v0.3.1/mdc_0.3.1_linux_amd64.tar.gz"
+      sha256 "d135bfa1340b61dca554509b943ccb2ca7507bcf2ddd2b18ba7645217f591c10"
       define_method(:install) do
         bin.install "mdc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaronflorey/mdc/releases/download/v0.3.0/mdc_0.3.0_linux_arm64.tar.gz"
-      sha256 "1658f3ebea660984cdda79ea508e2e8f2a9d2342a270f704fa7b501a8ad65ff6"
+      url "https://github.com/aaronflorey/mdc/releases/download/v0.3.1/mdc_0.3.1_linux_arm64.tar.gz"
+      sha256 "9ae31f0789fa8ea2d1351f74fc3eeaee352b10d1276039241c99f6a8457ca245"
       define_method(:install) do
         bin.install "mdc"
       end
