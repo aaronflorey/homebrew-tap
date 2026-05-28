@@ -5,20 +5,20 @@
 class Genignore < Formula
   desc "Generate and maintain safe .gitignore blocks"
   homepage "https://github.com/aaronflorey/genignore"
-  version "1.4.0"
+  version "1.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aaronflorey/genignore/releases/download/v1.4.0/genignore_1.4.0_darwin_amd64.tar.gz"
-      sha256 "ea8c2b5c4e1bf0a906d1b7cbeafbd5edf81f33eeb42710997dc9509c33c3dcfc"
+      url "https://github.com/aaronflorey/genignore/releases/download/v1.5.0/genignore_1.5.0_darwin_amd64.tar.gz"
+      sha256 "3bb7c986bcbb3bfe3f02a3b58a5a99f50500db4183b48603da03f05c015d9111"
 
       define_method(:install) do
         bin.install "genignore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aaronflorey/genignore/releases/download/v1.4.0/genignore_1.4.0_darwin_arm64.tar.gz"
-      sha256 "7229dcd16b93527399dc9c2f10caaa395ffb66e82af48ece873ebe6794040f48"
+      url "https://github.com/aaronflorey/genignore/releases/download/v1.5.0/genignore_1.5.0_darwin_arm64.tar.gz"
+      sha256 "ff04b4cf79978f4f22d82db15bd7ea9aee88a26b8c06fd02c5b9ec362fa854cb"
 
       define_method(:install) do
         bin.install "genignore"
@@ -28,15 +28,15 @@ class Genignore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaronflorey/genignore/releases/download/v1.4.0/genignore_1.4.0_linux_amd64.tar.gz"
-      sha256 "41e7740a55d543471fe36a23dea4afe72a22d607570a922ee9ca5f8f252a751b"
+      url "https://github.com/aaronflorey/genignore/releases/download/v1.5.0/genignore_1.5.0_linux_amd64.tar.gz"
+      sha256 "ca934fedd180696b0b867731ebcf8895b0c015cc4fe03fd1d5f4d18ad3cd2383"
       define_method(:install) do
         bin.install "genignore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaronflorey/genignore/releases/download/v1.4.0/genignore_1.4.0_linux_arm64.tar.gz"
-      sha256 "c1dcb327a7633a967c54812cf06b99e414c5bdcc2776407b6a7f80222b63ad9c"
+      url "https://github.com/aaronflorey/genignore/releases/download/v1.5.0/genignore_1.5.0_linux_arm64.tar.gz"
+      sha256 "7d449d8054bcf34bb3b892602367f02327814376537f25910578d84e3f542148"
       define_method(:install) do
         bin.install "genignore"
       end
